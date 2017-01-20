@@ -2,19 +2,14 @@
 
 namespace IceCreamEvents;
 
+use IceCreamEvents\Event;
+use IceCreamEvents\Listener;
+
 class EventHandler {
 
     private $_listeners = [];
 
-    public function register($name, $event, $listener, $method) {
-
-        if (!is_object($event)) {
-            throw new \Exception('Event needs to be a class.');
-        }
-
-        if (!is_object($listener)) {
-            throw new \Exception('Listener must be a class which implements a method that takes an Event object.');
-        }
+    public function register($name, Event $event, Listener $listener, $method) {
 
         if (!method_exists($listener, $method)) {
             throw new \Exception($method . ' does not exist for listener.');
@@ -36,7 +31,7 @@ class EventHandler {
     }
 
     public function dispatch($name) {
-        
+
         if (isset($this->_listeners[$name])) {
             return call_user_func_array(
                 [$this->_listeners[$name]['listener'], $this->_listeners[$name]['method']],

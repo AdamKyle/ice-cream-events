@@ -34,7 +34,9 @@ $listener = new Listener();
 Lets define the listener class:
 
 ```php
-class Listener {
+use IceCreamEvents\Listener;
+
+class PageViewEventListener extends Listener{
 
   // Read on to see the event definition.
   public function onAction(PageViewEvent $pageViewedEvent) {
@@ -46,7 +48,9 @@ class Listener {
 Now lets create an event:
 
 ```php
-class PageViewEvent {
+use IceCreamEvents\Event;
+
+class PageViewEvent extends Event {
 
   protected $pageViewed;
 
@@ -63,7 +67,7 @@ class PageViewEvent {
 Finally lets register the event with the appropriate listener:
 
 ```php
-$eventHandler->register('page.viewed', PageViewEvent::class, Listener::class, 'onAction');
+$eventHandler->register('page.viewed', PageViewEvent::class, PageViewEventListener::class, 'onAction');
 ```
 
 Next we dispatch the event:

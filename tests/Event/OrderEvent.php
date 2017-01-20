@@ -2,9 +2,10 @@
 
 namespace IceCreamEvents\Tests\Event;
 
+use IceCreamEvents\Event;
 use IceCreamEvents\Tests\Order\Order;
 
-class OrderEvent {
+class OrderEvent extends Event {
 
     private $_order;
 

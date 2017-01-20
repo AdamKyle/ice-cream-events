@@ -2,9 +2,10 @@
 
 namespace IceCreamEvents\Tests\Listener;
 
+use IceCreamEvents\Listener;
 use IceCreamEvents\Tests\Event\OrderEvent;
 
-class Listener {
+class OrderListener extends Listener {
 
     public function onCreate(OrderEvent $event) {
         return $event->getOrder()->getName();

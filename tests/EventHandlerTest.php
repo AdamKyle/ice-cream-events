@@ -4,7 +4,7 @@ use IceCreamEvents\EventHandler;
 
 use IceCreamEvents\Tests\Order\Order;
 use IceCreamEvents\Tests\Event\OrderEvent;
-use IceCreamEvents\Tests\Listener\Listener;
+use IceCreamEvents\Tests\Listener\OrderListener;
 
 
 class EventHandlerTest extends \PHPUnit_Framework_TestCase {
@@ -12,7 +12,7 @@ class EventHandlerTest extends \PHPUnit_Framework_TestCase {
     public function testCreateEventAndListener() {
         $order        = new Order();
         $orderEvent   = new OrderEvent($order);
-        $listener     = new Listener();
+        $listener     = new OrderListener();
 
         $eventHandler = new EventHandler();
 
@@ -24,35 +24,12 @@ class EventHandlerTest extends \PHPUnit_Framework_TestCase {
     /**
      * @expectedException \Exception
      */
-    public function testEventIsNotAClass() {
-        $eventHandler = new EventHandler();
-
-        $listener     = new Listener();
-
-        $eventHandler->register('order.create', 'some event', $listener, 'onCreate');
-    }
-
-    /**
-     * @expectedException \Exception
-     */
-    public function testListenerIsNotAClass() {
-        $eventHandler = new EventHandler();
-
-        $order        = new Order();
-        $orderEvent   = new OrderEvent($order);
-
-        $eventHandler->register('order.create', $orderEvent, 'listner', 'onCreate');
-    }
-
-    /**
-     * @expectedException \Exception
-     */
     public function testMethodOnListenerDoesNotExist() {
         $eventHandler = new EventHandler();
 
         $order        = new Order();
         $orderEvent   = new OrderEvent($order);
-        $listener     = new Listener();
+        $listener     = new OrderListener();
 
         $eventHandler->register('order.create', $orderEvent, $listener, 'onSomthing');
     }
@@ -65,7 +42,7 @@ class EventHandlerTest extends \PHPUnit_Framework_TestCase {
 
         $order        = new Order();
         $orderEvent   = new OrderEvent($order);
-        $listener     = new Listener();
+        $listener     = new OrderListener();
 
         $eventHandler->register('order.create', $orderEvent, $listener, 'uncallable');
     }
@@ -75,7 +52,7 @@ class EventHandlerTest extends \PHPUnit_Framework_TestCase {
 
         $order        = new Order();
         $orderEvent   = new OrderEvent($order);
-        $listener     = new Listener();
+        $listener     = new OrderListener();
 
         $eventHandler->register('order.create', $orderEvent, $listener, 'onCreate');
 
