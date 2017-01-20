@@ -63,7 +63,7 @@ class PageViewEvent {
 Finally lets register the event with the appropriate listener:
 
 ```php
-$eventHandler->register('page.viewed', PageViewEvent::class, Listener::class, 'onAction')
+$eventHandler->register('page.viewed', PageViewEvent::class, Listener::class, 'onAction');
 ```
 
 Next we dispatch the event:
