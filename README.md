@@ -11,8 +11,12 @@ Simple event handler for managing events in Ice Cream.
 
 ## Requirements
 
-- PHP 7
+- PHP 7.2
 - Is Stand Alone
+
+## Documentation
+
+You can view this packages documentation [here](https://github.com/AdamKyle/ice-cream-events/blob/master/docs/ApiIndex.md)
 
 ## Usage
 

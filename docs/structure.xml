@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="API Documentation" version="2.8.5">
+  <partials/>
+  <file path="Event.php" generated-path="Event.html" hash="22593d5f31d87efbf4704c9378fd1451" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="true" namespace="IceCreamEvents" line="5" package="Default">
+      <extends/>
+      <name>Event</name>
+      <full_name>\IceCreamEvents\Event</full_name>
+      <docblock line="5">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="5" description="Default"/>
+      </docblock>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="5" code="PPC:ERR-50005">No summary for class \IceCreamEvents\Event</error>
+    </parse_markers>
+    <source>eJyzsS/IKODiykvMTS0uSExOVfBMTnUuSk3MdS1LzSsptubiSkwqLilKTC5RSM5JLC5WAIsrVCvUcgEAYVEUUA==</source>
+  </file>
+  <file path="EventHandler.php" generated-path="EventHandler.html" hash="8fb64412fd496bc418b126960e8b7c15" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="Event">\IceCreamEvents\Event</namespace-alias>
+    <namespace-alias name="Listener">\IceCreamEvents\Listener</namespace-alias>
+    <class final="false" abstract="false" namespace="IceCreamEvents" line="8" package="Default">
+      <extends/>
+      <name>EventHandler</name>
+      <full_name>\IceCreamEvents\EventHandler</full_name>
+      <docblock line="8">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="8" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="IceCreamEvents" line="10" package="Default">
+        <name>$_listeners</name>
+        <full_name>\IceCreamEvents\EventHandler::_listeners</full_name>
+        <default>array()</default>
+        <docblock line="10">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="IceCreamEvents" line="12" package="Default">
+        <name>register</name>
+        <full_name>\IceCreamEvents\EventHandler::register()</full_name>
+        <docblock line="12">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$event</name>
+          <default></default>
+          <type>\IceCreamEvents\Event</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$listener</name>
+          <default></default>
+          <type>\IceCreamEvents\Listener</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$method</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="IceCreamEvents" line="29" package="Default">
+        <name>getListeners</name>
+        <full_name>\IceCreamEvents\EventHandler::getListeners()</full_name>
+        <docblock line="29">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="IceCreamEvents" line="33" package="Default">
+        <name>dispatch</name>
+        <full_name>\IceCreamEvents\EventHandler::dispatch()</full_name>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$name</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="8" code="PPC:ERR-50005">No summary for class \IceCreamEvents\EventHandler</error>
+      <error line="12" code="PPC:ERR-50015">Argument $name is missing from the Docblock of register</error>
+      <error line="12" code="PPC:ERR-50015">Argument $event is missing from the Docblock of register</error>
+      <error line="12" code="PPC:ERR-50015">Argument $listener is missing from the Docblock of register</error>
+      <error line="12" code="PPC:ERR-50015">Argument $method is missing from the Docblock of register</error>
+      <error line="12" code="PPC:ERR-50008">No summary for method register()</error>
+      <error line="29" code="PPC:ERR-50008">No summary for method getListeners()</error>
+      <error line="33" code="PPC:ERR-50015">Argument $name is missing from the Docblock of dispatch</error>
+      <error line="33" code="PPC:ERR-50008">No summary for method dispatch()</error>
+      <error line="10" code="PPC:ERR-50007">No summary for property $_listeners</error>
+    </parse_markers>
+    <source>eJyVU8tugzAQvPMVWwkJItF8QGnSQxWplXronVjIIUux5BhkmzxU5d+LMU5CgErZi8GenR3vrF/fqqLyPEF3qCqaIXxm+C6R7lZ7FFrFnler+811u8RjJ19MaRQom7yMU6Wg3f+gYstRwq/nQROVZHuqEfyUd3AFC0hI3B3XG84yyGuRaVYKkPhjYDL0jcrIUoKPZonAVQTfkUXg71AX5XbmCppgOYRPdj/FYwNV4UiGSYGb0IUsDyDwAOvVMcPKCAo7MMwhgG2JCkSpoeWEvJTgWOfBLL6Qne+UMJVmlHO64RgmQyHkcSW3pYFZUa7EHL450sauUvDTpaGu05ZETen1dcHU8/JqVtIaQYxnPYlBa0lgPhdLZ1Af4TiCFnG5dh9k9QQdjf27IIjVeB6flR/UbiBUOHsBKiU93XRSoq6lGF7pX9Ita56Gzgo7gIOpYkqhDqe6NDCyk2CsSZsXJFNTJ22Fhj2giWSKNrm2kkSTFiWul4REj3BbIwnp5YxPR3ednHKFrotn7w/ZXkwF</source>
+  </file>
+  <file path="Listener.php" generated-path="Listener.html" hash="12b2167f308dc8c804b439b4750a242c" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <class final="false" abstract="true" namespace="IceCreamEvents" line="5" package="Default">
+      <extends/>
+      <name>Listener</name>
+      <full_name>\IceCreamEvents\Listener</full_name>
+      <docblock line="5">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="5" description="Default"/>
+      </docblock>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="5" code="PPC:ERR-50005">No summary for class \IceCreamEvents\Listener</error>
+    </parse_markers>
+    <source>eJyzsS/IKODiykvMTS0uSExOVfBMTnUuSk3MdS1LzSsptubiSkwqLilKTC5RSM5JLC5W8MksLknNSy1SqFao5QIAo2gVlA==</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="global" full_name="global"/>
+  <namespace name="IceCreamEvents" full_name="IceCreamEvents"/>
+  <deprecated count="0"/>
+</project>

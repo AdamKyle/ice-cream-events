@@ -5,9 +5,9 @@ use IceCreamEvents\EventHandler;
 use IceCreamEvents\Tests\Order\Order;
 use IceCreamEvents\Tests\Event\OrderEvent;
 use IceCreamEvents\Tests\Listener\OrderListener;
+use PHPUnit\Framework\TestCase;
 
-
-class EventHandlerTest extends \PHPUnit_Framework_TestCase {
+class EventHandlerTest extends TestCase {
 
     public function testCreateEventAndListener() {
         $order        = new Order();
