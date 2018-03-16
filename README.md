@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/AdamKyle/ice-cream-events.svg?branch=master)](https://travis-ci.org/AdamKyle/ice-cream-events)
 [![Packagist](https://img.shields.io/packagist/v/ice-cream/events.svg?style=flat)](https://packagist.org/packages/ice-cream/events)
-[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
+[![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)]()
 [![Made With Love](https://img.shields.io/badge/Made%20With-Love-green.svg)]()
 
 **Actual Version: 1.1.0**
