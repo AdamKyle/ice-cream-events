@@ -5,8 +5,6 @@
 [![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)]()
 [![Made With Love](https://img.shields.io/badge/Made%20With-Love-green.svg)]()
 
-**Actual Version: 1.1.0**
-
 Simple event handler for managing events in Ice Cream.
 
 ## Requirements
